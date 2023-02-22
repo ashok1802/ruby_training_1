@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>Edit Record</h1>
+
+	<%= form_for @book do |b| %>
+	  <%= label_tag(:title, "Book name:") %>
+	  <%= text_field_tag(:title , @book.title) %><br>
+	  <%= hidden_field_tag(:id, @book.id) %>
+	  <%= label_tag(:count, "Book count:") %>
+	  <%= text_field_tag(:count , @book.count) %><br>
+	  <%= submit_tag("Update") %>
+	<% end %>
+
+</body>
+</html>

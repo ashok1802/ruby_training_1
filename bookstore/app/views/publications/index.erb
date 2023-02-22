@@ -1,0 +1,18 @@
+<h1>Publication Listing</h1>
+<table border="1">
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Phone</th>
+	</tr>
+	<% @pubs.each do |pub| %>
+		<tr>
+			<td><%=pub.id%></td>
+			<td><%=pub.name%></td>
+			<td><%=pub.email_id%></td>
+			<td><%=pub.phone_no%></td>
+		</tr>
+	<%end%>
+		
+</table>

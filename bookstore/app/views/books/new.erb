@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h1>New Record<button><%= link_to 'Listing', '/books' %></button></h1>
+	<%= form_with(url: "/books", method: "post") do %>
+	  <%= label_tag(:title, "Book name:") %>
+	  <%= text_field_tag(:title) %><br>
+	  <%= label_tag(:count, "Book count:") %>
+	  <%= text_field_tag(:count) %><br>
+	  <%= submit_tag("Save") %>
+	<% end %>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<%= form_with(url: "/user", method: "post") do %>
+	<h1>Register<button><%= link_to 'Listing', 'user' %></button></h1>
+	  <%= label_tag(:name, "Name:") %>
+	  <%= text_field_tag(:name) %><br>
+	  <%= label_tag(:mobile, "Mobile:") %>
+	  <%= text_field_tag(:mobile) %><br>
+	  <%= label_tag(:email, "Email:") %>
+	  <%= text_field_tag(:email) %><br>
+	  <%= submit_tag("Register") %>
+	<% end %>
+
+</body>
+</html>
